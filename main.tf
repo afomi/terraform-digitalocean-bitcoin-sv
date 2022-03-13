@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 0.12.1"
+  required_version = "~> 1.1.7"
 
   required_providers {
     digitalocean = "~> 1.4"
@@ -10,7 +10,7 @@ terraform {
 }
 
 module "server" {
-  source  = "4ops/docker-server/digitalocean"
+  source  = "afomi/docker-server/digitalocean"
   version = "1.0.0"
 
   name                 = var.name
